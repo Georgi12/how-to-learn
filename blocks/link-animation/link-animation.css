@@ -1,8 +1,0 @@
-@keyframes link-animation {
-    from {opacity: 100%;}
-    to {opacity: 50%;}
-}
-
-a:hover {
-    animation: link-animation 0.5s ease 0s  alternate forwards running;
-}

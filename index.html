@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./vendor/normalize/normalize.css" rel="stylesheet">
-
   <link href="./pages/index.css" rel="stylesheet">
   <title>Научиться учиться</title>
 </head>
@@ -37,7 +35,7 @@
           </p>
           
           <p class="two-columns__paragraph">
-            <span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то 
+            <span class="two-columns__p-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то 
             этому мало где учат. Что с этим делать?
           </p>
           
@@ -49,8 +47,17 @@
       </div>
       </section>
       <section class="techniques">
+
+        <!--
+          С стром брифе было указано что у блока section-title значение line-hight - 69px, во всех блоках кроме vidio и techniques, 
+          сказано просто использовать блок повторно. А в блоках же vidio и techniques, помимо того что нужно использовать блок section-title
+          повторно, так еще и нужно изменить знччение section-title на rem. Хотя что 69px что 1.15 - это одно и то же. Сейяас я исправил 
+          значение по новому брифу. Но для меня это двойная формулировка. Потому что в блоке resources, не сказано что нужно задавать значение
+          получается я нарушаю услувия из брифа по первой работе
+         -->
+
         <h2 class="section-title">Техники обучения</h2>
-        <span class="section-subtitle">Пять практик от Барбары Оакли</span>
+        <p class="section-subtitle">Пять практик от Барбары Оакли</p>
         <ul class="cards">
           <li class="cards__item">
             <img class="cards__image" src="images/cards-attention.png" alt="Внимание">
@@ -95,12 +102,11 @@
       </section>
       <section class="vidio">
         <h2 class="section-title">Видео нa TED</h2>
-        <span class="section-subtitle">Для тех, кто любит прокрастинировать</span>
+        <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="vidio__iframes">
-          <iframe class="vidio__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe class="vidio__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="vidio__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="vidio__iframe" src="https://www.youtube.com/embed/arj7oStGLkU"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-
       </section>
 
       <section class="oakley">
@@ -128,7 +134,7 @@
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
 
-        <span class="section-subtitle">Про учебу и мозг</span>
+        <p class="section-subtitle">Про учебу и мозг</p>
 
         <ul class="table">
           <li class="table__cell">
@@ -178,15 +184,15 @@
         
       <section class="khan">
         <div class="khan__container">
-          <span class="khan__author">Салман Хан</span>
+          <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
           <blockquote class="khan__quote">
             Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. 
             Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся 
             повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.
           </blockquote>
-          <span class="khan__quote-author">Джордж Лукас</span>
-          <span class="khan__quote-author-subline">Кинорежиссер, продюсер</span>
+          <p class="khan__quote-author">Джордж Лукас</p>
+          <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img class="khan__book-pic" src="images/khan-book.jpg" alt="Обложка книги">
             <a href="#" class="khan__buy-link">Купить книгу &rarr;</a>
@@ -199,7 +205,7 @@
 
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
 
-        <span class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</span>
+        <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
         
         <ul class="table table_theme_dark">
           <li class="table__cell table__cell_theme_dark">
@@ -256,7 +262,7 @@
       
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
-        <span class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</span>
+        <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
         <ul class="resources__logo-zone">
           <li>
             <a href="#"><img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="Иконка Instagram"></a>

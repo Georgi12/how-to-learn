@@ -3,6 +3,7 @@
     top: 50px;
     width: 515px;
     height: 316px;
+    border: 0;
 }
 
 .vidio__iframe:first-of-type {
